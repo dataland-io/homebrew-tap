@@ -4,31 +4,21 @@
 class DatalandCli < Formula
   desc "Dataland command-line interface"
   homepage "https://dataland.io"
-  version "0.1.0-alpha.1"
+  version "0.1.0"
 
   on_macos do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.stainless.dev/dataland-cli/releases/0.1.0-alpha.1/dataland-cli-0.1.0-alpha.1-x86_64-macos.tar.gz"
-      sha256 "e91858a6e6e8a3312929858d3707ac8e9b4b94d9f1e3f74dbad16d5e16c477f4"
+    url "https://dl.stainless.dev/dataland-cli/releases/0.1.0/dataland-cli-0.1.0-x86_64-macos.tar.gz"
+    sha256 "19584e56316627bf01f8ca6196ec76a456816a4a1ffc3d4a9a1bf543b9a4f3b1"
 
-      def install
-        bin.install "dataland"
-      end
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://dl.stainless.dev/dataland-cli/releases/0.1.0-alpha.1/dataland-cli-0.1.0-alpha.1-x86_64-macos.tar.gz"
-      sha256 "e91858a6e6e8a3312929858d3707ac8e9b4b94d9f1e3f74dbad16d5e16c477f4"
-
-      def install
-        bin.install "dataland"
-      end
+    def install
+      bin.install "dataland"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.stainless.dev/dataland-cli/releases/0.1.0-alpha.1/dataland-cli-0.1.0-alpha.1-x86_64-linux.tar.gz"
-      sha256 "575469e251202481027b47e36a7fa8c9c4dea405c639df0a5d7cbaba97f33f76"
+      url "https://dl.stainless.dev/dataland-cli/releases/0.1.0/dataland-cli-0.1.0-x86_64-linux.tar.gz"
+      sha256 "f91249b4dc5762ff999a4810a0b20477e16474eaa136dccdfc20bad63cc62e68"
 
       def install
         bin.install "dataland"
