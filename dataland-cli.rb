@@ -8,7 +8,7 @@ class DatalandCli < Formula
 
   on_macos do
     url "https://dl.stainless.dev/dataland-cli/releases/0.1.0/dataland-cli-0.1.0-x86_64-macos.tar.gz"
-    sha256 "19584e56316627bf01f8ca6196ec76a456816a4a1ffc3d4a9a1bf543b9a4f3b1"
+    sha256 "a34f07797c890b3556e58ef55a888e9b8fe9c07db29d83d996cf6db6ddd08fd5"
 
     def install
       bin.install "dataland"
@@ -18,7 +18,7 @@ class DatalandCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://dl.stainless.dev/dataland-cli/releases/0.1.0/dataland-cli-0.1.0-x86_64-linux.tar.gz"
-      sha256 "f91249b4dc5762ff999a4810a0b20477e16474eaa136dccdfc20bad63cc62e68"
+      sha256 "1442190a8d4a349a987032ae4ea6a44e4f12c626625b40b9e4dcd199daaafd61"
 
       def install
         bin.install "dataland"
